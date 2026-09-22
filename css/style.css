@@ -1,5 +1,197 @@
+main {
+    padding-top: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
 .hotel-image {
     width: 100%;
     height: 400px;
     object-fit: cover;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    text-decoration: none;
+    justify-content: center;
+    margin: 10px 0 10px 0
+}
+
+.logo h1 {
+    margin: 0;
+}
+
+.logo img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+.intro-text {
+    margin: 15px 0 25px;
+    padding: 15px 20px;
+
+    border-left: 4px solid #20bfa9;
+
+    background-color: #f5fbfa;
+
+    font-style: italic;
+    font-size: 1.05rem;
+    line-height: 1.6;
+}
+
+.card-image {
+    width: 100%;
+    height: 190px;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+.card-image {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+
+    display: block;
+
+    transition: transform 0.3s ease;
+}
+
+article a:hover .card-image {
+    transform: scale(1.05);
+}
+.card-title {
+    margin: 8px 0 20px;
+
+    text-align: center;
+
+    font-size: 1.15rem;
+    line-height: 1.3;
+}
+
+.card-title a {
+    text-decoration: none;
+}
+
+aside {
+    padding-left: 20px;
+}
+
+aside section {
+    margin-bottom: 30px;
+    padding: 20px;
+
+    border-radius: 8px;
+
+    background-color: #f5fbfa;
+}
+
+aside h2 {
+    margin-bottom: 15px;
+
+    font-size: 1.4rem;
+
+    border-bottom: 2px solid #20bfa9;
+    padding-bottom: 8px;
+}
+
+aside ul {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+aside li {
+    margin-bottom: 12px;
+}
+
+aside a {
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.offers-section {
+    margin-top: 30px;
+    padding-top: 30px;
+
+    border-top: 2px solid #20bfa9;
+}
+
+.offer-card {
+    padding: 20px;
+    margin-bottom: 20px;
+
+    border: 1px solid #d9eeee;
+    border-radius: 8px;
+}
+
+.offer-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 12px;
+}
+
+.offer-discount {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #20a995;
+}
+
+.offer-link {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+aside {
+    padding-left: 20px;
+}
+
+@media (max-width: 991.98px) {
+    aside {
+        padding-left: 0;
+        margin-top: 30px;
+    }
+}
+
+.travel-navbar {
+    background-color: #063b66;
+}
+
+.travel-footer {
+    margin-top: 50px;
+    padding: 35px 20px;
+
+    background-color: #063b66;
+    color: white;
+
+    text-align: center;
+}
+
+.footer-brand {
+    margin: 0 0 8px;
+
+    font-size: 2rem;
+    font-weight: bold;
+
+    color: white;
+}
+
+.footer-tagline {
+    margin: 0 0 20px;
+
+    font-size: 1rem;
+    letter-spacing: 1px;
+
+    color: #20bfa9;
+}
+
+.footer-year {
+    margin: 0;
+
+    font-size: 0.85rem;
+    color: #d9eeee;
 }
