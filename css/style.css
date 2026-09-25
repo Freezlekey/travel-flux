@@ -16,7 +16,7 @@ main {
     gap: 15px;
     text-decoration: none;
     justify-content: center;
-    margin: 10px 0 10px 0
+    margin: 10px 0;
 }
 
 .logo h1 {
@@ -45,17 +45,7 @@ main {
 .card-image {
     width: 100%;
     height: 190px;
-
     object-fit: cover;
-
-    display: block;
-}
-
-.card-image {
-    width: 100%;
-    height: 190px;
-    object-fit: cover;
-
     display: block;
 
     transition: transform 0.3s ease;
@@ -64,6 +54,7 @@ main {
 article a:hover .card-image {
     transform: scale(1.05);
 }
+
 .card-title {
     margin: 8px 0 20px;
 
@@ -146,14 +137,20 @@ aside a {
     font-weight: bold;
 }
 
-aside {
-    padding-left: 20px;
+.sidebar-sticky {
+    max-width: 320px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 @media (max-width: 991.98px) {
     aside {
         padding-left: 0;
         margin-top: 30px;
+    }
+
+    .sidebar-sticky {
+        max-width: none;
     }
 }
 
@@ -162,7 +159,7 @@ aside {
 }
 
 .travel-footer {
-    margin-top: 50px;
+    margin-top: 20px;
     padding: 35px 20px;
 
     background-color: #063b66;
@@ -194,4 +191,270 @@ aside {
 
     font-size: 0.85rem;
     color: #d9eeee;
+}
+
+/*----------------------------*/
+
+.hotel-detail-header {
+    background-color: #063b66;
+    margin-left: -40px;
+    margin-right: -40px;
+    margin-bottom: 30px;
+}
+
+.hotel-navigation {
+    width: 100%;
+    padding: 25px;
+    text-align: center;
+}
+
+.hotel-navigation h2 {
+    margin-bottom: 8px;
+    font-size: 2rem;
+    color: white;
+}
+
+.detail-subtitle {
+    margin-bottom: 8px;
+    font-size: 1.1rem;
+    color: white;
+}
+
+.hotel-rating {
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+    color: #20bfa9;
+}
+
+.hotel-navigation hr {
+    width: 70%;
+    margin: 20px auto;
+    border-color: white;
+}
+
+.detail-button {
+    display: inline-block;
+    padding: 8px 18px;
+    border-radius: 5px;
+
+    background-color: #20bfa9;
+    color: white;
+
+    text-decoration: none;
+}
+
+.detail-button:hover {
+    background-color: white;
+    color: #063b66;
+}
+
+.hotel-detail {
+    margin-bottom: 25px;
+}
+
+.hotel-detail h2 {
+    margin-bottom: 15px;
+}
+
+.hotel-detail-image {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.booking-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 9px 16px;
+    border-radius: 5px;
+
+    background-color: #063b66;
+    color: white;
+
+    text-decoration: none;
+}
+
+.booking-button:hover {
+    background-color: #20bfa9;
+    color: white;
+}
+
+.hotel-history {
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+.hotel-history h3 {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding-bottom: 8px;
+
+    border-bottom: 2px solid #20bfa9;
+
+    font-size: 1.4rem;
+}
+
+.history-content {
+    max-width: 800px;
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+.history-content p {
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+.history-intro {
+    font-size: 1.05rem;
+    font-style: italic;
+}
+
+.detail-section,
+.hotel-information {
+    margin-top: 30px;
+}
+
+.detail-section h3,
+.hotel-information h3 {
+    margin-bottom: 20px;
+    padding-bottom: 8px;
+
+    border-bottom: 2px solid #20bfa9;
+
+    font-size: 1.4rem;
+}
+
+.detail-section p,
+.hotel-information p {
+    margin-bottom: 12px;
+    line-height: 1.6;
+}
+
+.detail-section ul {
+    padding-left: 20px;
+}
+
+.detail-section li {
+    margin-bottom: 8px;
+}
+
+@media (max-width: 767.98px) {
+
+    .hotel-detail-image {
+        height: 280px;
+        margin-bottom: 25px;
+    }
+
+    .hotel-navigation h2 {
+        font-size: 1.6rem;
+    }
+
+    .hotel-detail-header {
+        margin-left: -40px;
+        margin-right: -40px;
+    }
+
+}
+
+.offer-details {
+    margin-top: 15px;
+}
+
+
+.offer-details summary {
+    display: inline-block;
+    padding: 8px 0;
+    color: #063b66;
+    font-weight: bold;
+    cursor: pointer;
+    list-style: none;
+}
+
+
+.offer-details summary::-webkit-details-marker {
+    display: none;
+}
+
+
+.offer-details summary::marker {
+    content: "";
+}
+
+
+.offer-details summary:hover {
+    color: #20bfa9;
+}
+
+
+.offer-details-content {
+    margin-top: 15px;
+    padding: 20px;
+    border-left: 4px solid #20bfa9;
+    border-radius: 0 8px 8px 0;
+    background-color: #f5fbfa;
+}
+
+
+.offer-details-content h4 {
+    margin-top: 15px;
+    margin-bottom: 8px;
+    color: #063b66;
+    font-size: 1.05rem;
+}
+
+
+.offer-details-content h4:first-child {
+    margin-top: 0;
+}
+
+
+.offer-details-content p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+
+.offer-details-content strong {
+    color: #20a995;
+}
+
+
+.offer-details-content ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+
+.offer-details-content li {
+    margin-bottom: 8px;
+}
+
+.travel-tip {
+    margin-top: 40px;
+    padding: 30px;
+    border-top: 2px solid #20bfa9;
+}
+
+.travel-tip-content {
+    margin-bottom: 25px;
+}
+
+.travel-tip h2 {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+.travel-tip p {
+    margin-bottom: 15px;
+    line-height: 1.7;
+}
+
+.travel-tip-image {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    display: block;
 }
