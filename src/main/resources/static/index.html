@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TravelFlux</title>
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="Logo de TravelFlux">
+                <h1>TravelFlux</h1>
+            </a>
+        </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-dark travel-navbar">
+        <div class="container">
+
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#mainNavigation"
+                aria-controls="mainNavigation"
+                aria-expanded="false"
+                aria-label="Mostrar navegación"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNavigation">
+
+                <ul class="navbar-nav mx-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">
+                            INICIO
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#hoteles">
+                            HOTELES
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#vuelos">
+                            VUELOS
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#ofertas">
+                            OFERTAS
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+
+    <main class="container-fluid">
+
+        <div class="row">
+
+            <section class="col-lg-9">
+
+                <section id="hoteles">
+
+                    <h3>Novedades de hoteles</h3>
+
+                    <blockquote class="intro-text">
+                        Descubre nuevos hoteles, conoce sus historias y características
+                        y encuentra los lugares que convierten cada viaje en una nueva experiencia.
+                    </blockquote>
+
+
+                    <div class="row" id="hoteles-container">
+                        <p>Cargando hoteles...</p>
+                    </div>
+
+                </section>
+
+
+
+                <section id="ofertas" class="offers-section">
+
+                    <h2>Ofertas especiales</h2>
+
+
+                    <div class="row">
+
+
+                        <div class="col-lg-6">
+
+                            <article
+                                id="oferta-alicante"
+                                class="offer-card"
+                            >
+
+                                <h3>Vuelo + Hotel en Alicante</h3>
+
+                                <p>
+                                    Disfruta de una estancia en Alicante combinando vuelo
+                                    y alojamiento en una sola reserva.
+                                </p>
+
+                                <p class="offer-discount">
+                                    20% de descuento
+                                </p>
+
+                                <p>
+                                    <strong>Válida:</strong>
+                                    del 1 al 30 de junio.
+                                </p>
+
+
+                                <details
+                                    id="oferta-semana"
+                                    class="offer-details"
+                                >
+
+                                    <summary>
+                                        Ver oferta
+                                    </summary>
+
+
+                                    <div class="offer-details-content">
+
+                                        <h4>¿Cómo funciona?</h4>
+
+                                        <p>
+                                            Combina un vuelo a Alicante con una estancia
+                                            en el Hotel Mediterráneo dentro de una misma
+                                            oferta.
+                                        </p>
+
+
+                                        <h4>¿Cómo puedes ahorrar?</h4>
+
+                                        <p>
+                                            Obtienes un
+                                            <strong>20% de descuento</strong>
+                                            al reservar conjuntamente el vuelo y el
+                                            alojamiento durante el periodo indicado.
+                                        </p>
+
+
+                                        <h4>¿Qué incluye?</h4>
+
+                                        <ul>
+
+                                            <li>
+                                                Vuelo a Alicante.
+                                            </li>
+
+                                            <li>
+                                                Alojamiento en el Hotel Mediterráneo.
+                                            </li>
+
+                                            <li>
+                                                20% de descuento.
+                                            </li>
+
+                                        </ul>
+
+                                    </div>
+
+                                </details>
+
+                            </article>
+
+                        </div>
+
+
+                        <div class="col-lg-6">
+
+                            <article
+                                id="oferta-roma"
+                                class="offer-card"
+                            >
+
+                                <h3>Vuelo + Hotel en Roma</h3>
+
+                                <p>
+                                    Combina tu vuelo con alojamiento y descubre Roma
+                                    con un precio especial.
+                                </p>
+
+                                <p class="offer-discount">
+                                    15% de descuento
+                                </p>
+
+                                <p>
+                                    <strong>Válida:</strong>
+                                    del 10 al 25 de julio.
+                                </p>
+
+
+                                <details
+                                    id="oferta-descuento"
+                                    class="offer-details"
+                                >
+
+                                    <summary>
+                                        Ver oferta
+                                    </summary>
+
+
+                                    <div class="offer-details-content">
+
+                                        <h4>¿Cómo funciona?</h4>
+
+                                        <p>
+                                            Combina un vuelo a Roma con una estancia
+                                            en el Hotel Plaza para organizar el viaje
+                                            en una sola oferta.
+                                        </p>
+
+
+                                        <h4>¿Cómo puedes ahorrar?</h4>
+
+                                        <p>
+                                            Puedes obtener un
+                                            <strong>15% de descuento</strong>
+                                            al reservar conjuntamente el vuelo y el
+                                            alojamiento durante las fechas indicadas.
+                                        </p>
+
+
+                                        <h4>¿Qué incluye?</h4>
+
+                                        <ul>
+
+                                            <li>
+                                                Vuelo a Roma.
+                                            </li>
+
+                                            <li>
+                                                Alojamiento en el Hotel Plaza.
+                                            </li>
+
+                                            <li>
+                                                15% de descuento.
+                                            </li>
+
+                                        </ul>
+
+                                    </div>
+
+                                </details>
+
+                            </article>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+            </section>
+            
+            <aside class="col-lg-3">
+
+                <section>
+
+                    <h2>Destacados</h2>
+
+                    <ul>
+
+                        <li>
+                            <a href="index.html#oferta-semana">
+                                Oferta de la semana
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="index.html#oferta-descuento">
+                                Hasta 20% de descuento
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="detail.html#vuelo-valencia-londres">
+                                Nuevo destino: Valencia → Londres
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="detail.html#hotel-costa-azul">
+                                Hotel recomendado: Costa Azul
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="index.html#oferta-semana">
+                                Escapada de verano
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </section>
+
+                <section>
+
+                    <h2>Ofertas</h2>
+
+                    <ul>
+
+                        <li>
+
+                            <a href="detail.html#vuelo-madrid-alicante">
+                                Madrid → Alicante
+                            </a>
+
+                            <p>
+                                Vuelo + Hotel Mediterráneo
+                                <br>
+                                Del 1 al 30 de junio —
+                                20% de descuento.
+                            </p>
+
+                        </li>
+
+
+                        <li>
+
+                            <a href="detail.html#vuelo-barcelona-roma">
+                                Barcelona → Roma
+                            </a>
+
+                            <p>
+                                Vuelo + Hotel Plaza
+                                <br>
+                                Del 10 al 25 de julio —
+                                15% de descuento.
+                            </p>
+
+                        </li>
+
+                    </ul>
+
+                </section>
+
+                <section>
+
+                    <h2>Consejos para viajar</h2>
+
+                    <ul>
+
+                        <li>
+                            <a href="detail.html#consejo-ofertas">
+                                Reserva vuelo + hotel y ahorra
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="detail.html#consejo-hoteles">
+                                Compara hoteles antes de reservar
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="detail.html#consejo-vuelos">
+                                Descubre nuevos destinos
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </section>
+
+            </aside>
+            
+        </div>
+
+    </main>
+
+
+    <footer class="travel-footer">
+
+        <div class="container text-center">
+
+            <p class="footer-brand">
+                TravelFlux
+            </p>
+
+            <p class="footer-tagline">
+                Hoteles · Vuelos · Ofertas
+            </p>
+
+            <p class="footer-year">
+                © 2026 TravelFlux
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    ></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

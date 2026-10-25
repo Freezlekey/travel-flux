@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TravelFlux - Detalles del hotel</title>
+
+    <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="container">
+        <a href="index.html" class="logo">
+            <img src="images/logo.png" alt="Logo de TravelFlux">
+            <h1>TravelFlux</h1>
+        </a>
+    </div>
+</header>
+
+<main class="container-fluid">
+
+    <!-- Заголовок отеля -->
+    <div id="detail-container">
+        <p class="text-center">Cargando información...</p>
+    </div>
+
+    <!-- Основная информация и боковая панель -->
+    <div class="row">
+
+        <div class="col-lg-9">
+
+            <section class="hotel-history">
+                <h3>Historia del hotel</h3>
+
+                <div class="history-content">
+                    <p id="hotel-history">Cargando historia...</p>
+                </div>
+            </section>
+
+            <section class="hotel-detail">
+                <div class="row align-items-start">
+
+                    <div class="col-md-5">
+                        <img
+                                id="hotel-image"
+                                class="hotel-detail-image"
+                                src=""
+                                alt=""
+                        >
+                    </div>
+
+                    <div class="col-md-7">
+                        <h2 id="hotel-name"></h2>
+
+                        <p id="hotel-description"></p>
+
+                        <p>
+                            <strong>Categoría:</strong>
+                            <span id="hotel-stars"></span>
+                        </p>
+
+                        <p>
+                            <strong>Ubicación:</strong>
+                            <span id="hotel-location"></span>
+                        </p>
+
+                        <a
+                                id="hotel-website"
+                                class="booking-button"
+                                href="#"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                hidden
+                        >
+                            Visitar página oficial
+                        </a>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="detail-section">
+                <h3>¿Por qué es popular?</h3>
+                <p id="hotel-popularity"></p>
+            </section>
+
+            <section class="hotel-information">
+                <h3>Información útil</h3>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <p>
+                            <strong>Categoría:</strong>
+                            <span id="info-stars"></span>
+                        </p>
+
+                        <p>
+                            <strong>Ubicación:</strong>
+                            <span id="info-location"></span>
+                        </p>
+                    </div>
+
+                    <div class="col-md-6">
+                        <p>
+                            <strong>Hotel:</strong>
+                            <span id="info-name"></span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+        <!-- Боковая панель -->
+        <aside class="col-lg-3">
+
+            <div class="sidebar-sticky">
+
+                <section>
+                    <h2>Destacados</h2>
+                    <ul>
+                        <li><a href="index.html#ofertas">Oferta de la semana</a></li>
+                        <li><a href="index.html#ofertas">Hasta 20% de descuento</a></li>
+                        <li><a href="index.html#vuelos">Nuevo destino: Valencia – Londres</a></li>
+                        <li><a href="index.html#hoteles">Hotel recomendado: Costa Azul</a></li>
+                        <li><a href="index.html#ofertas">Escapada de verano</a></li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Ofertas</h2>
+                    <ul>
+                        <li>
+                            <a href="index.html#ofertas">Madrid – Alicante</a>
+                            <br>
+                            Vuelo + Hotel Mediterráneo
+                            <br>
+                            Del 1 al 30 de junio – 20% de descuento.
+                        </li>
+
+                        <li>
+                            <a href="index.html#ofertas">Barcelona – Roma</a>
+                            <br>
+                            Vuelo + Hotel Plaza
+                            <br>
+                            Del 10 al 25 de julio – 15% de descuento.
+                        </li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Consejos para viajar</h2>
+                    <ul>
+                        <li><a href="index.html#ofertas">Reserva vuelo + hotel y ahorra</a></li>
+                        <li><a href="index.html#hoteles">Compara hoteles antes de reservar</a></li>
+                        <li><a href="index.html">Descubre nuevos destinos</a></li>
+                    </ul>
+                </section>
+
+            </div>
+
+        </aside>
+
+    </div>
+
+</main>
+
+<footer class="travel-footer">
+    <div class="container text-center">
+        <p class="footer-brand">TravelFlux</p>
+        <p class="footer-tagline">Hoteles · Vuelos · Ofertas</p>
+        <p class="footer-year">© 2026 TravelFlux</p>
+    </div>
+</footer>
+
+<script src="js/detail.js"></script>
+
+</body>
+</html>
