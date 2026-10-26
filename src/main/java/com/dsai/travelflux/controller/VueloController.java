@@ -23,7 +23,7 @@ public class VueloController {
         this.vueloRepository = vueloRepository;
     }
 
-    // READ: obtener los tres vuelos destacados como novedades
+    // READ
     @GetMapping("/novedades")
     public List<Vuelo> obtenerNovedades() {
         return vueloRepository.findAll()
@@ -32,13 +32,13 @@ public class VueloController {
                 .toList();
     }
 
-    // READ: obtener todos los vuelos
+    // READ
     @GetMapping
     public List<Vuelo> obtenerVuelos() {
         return vueloRepository.findAll();
     }
 
-    // READ: obtener un vuelo por ID
+    // READ
     @Operation(
             summary = "Obtener un vuelo por ID",
             description = "Devuelve los detalles de un vuelo a partir de su identificador."
@@ -53,7 +53,7 @@ public class VueloController {
                 .orElseThrow(() -> new VueloNotFoundException(id));
     }
 
-    // CREATE: crear un vuelo
+    // CREATE
     @Operation(summary = "Crear un vuelo")
     @ApiResponses(value = {
             @ApiResponse(responseCode = "201", description = "Vuelo creado")
@@ -65,7 +65,7 @@ public class VueloController {
         return vueloRepository.save(vuelo);
     }
 
-    // UPDATE: actualizar un vuelo existente
+    // UPDATE
     @Operation(summary = "Actualizar un vuelo")
     @ApiResponses(value = {
             @ApiResponse(responseCode = "200", description = "Vuelo actualizado"),
@@ -93,7 +93,7 @@ public class VueloController {
         return vueloRepository.save(vuelo);
     }
 
-    // DELETE: eliminar un vuelo
+    // DELETE
     @Operation(summary = "Eliminar un vuelo")
     @ApiResponses(value = {
             @ApiResponse(responseCode = "204", description = "Vuelo eliminado"),

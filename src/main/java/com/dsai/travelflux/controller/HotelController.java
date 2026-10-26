@@ -28,7 +28,7 @@ public class HotelController {
         this.hotelRepository = hotelRepository;
     }
 
-    // READ: obtener los tres hoteles destacados como novedades
+    // READ
     @GetMapping("/novedades")
     public List<Hotel> obtenerNovedades() {
         return hotelRepository.findAll()
@@ -37,13 +37,13 @@ public class HotelController {
                 .toList();
     }
 
-    // READ: obtener todos los hoteles
+    // READ
     @GetMapping
     public List<Hotel> obtenerHoteles() {
         return hotelRepository.findAll();
     }
 
-    // READ: obtener un hotel por ID
+    // READ
     @Operation(
             summary = "Obtener un hotel por ID",
             description = "Devuelve los detalles de un hotel a partir de su identificador."
@@ -60,7 +60,7 @@ public class HotelController {
                 .orElseGet(() -> ResponseEntity.notFound().build());
     }
 
-    // CREATE: crear un hotel
+    // CREATE
     @Operation(summary = "Crear un hotel")
     @ApiResponses(value = {
             @ApiResponse(responseCode = "201", description = "Hotel creado")
@@ -72,7 +72,7 @@ public class HotelController {
         return hotelRepository.save(hotel);
     }
 
-    // UPDATE: actualizar un hotel existente
+    // UPDATE
     @Operation(summary = "Actualizar un hotel")
     @ApiResponses(value = {
             @ApiResponse(responseCode = "200", description = "Hotel actualizado"),
@@ -98,7 +98,7 @@ public class HotelController {
         return hotelRepository.save(hotel);
     }
 
-    // DELETE: eliminar un hotel
+    // DELETE
     @Operation(summary = "Eliminar un hotel")
     @ApiResponses(value = {
             @ApiResponse(responseCode = "204", description = "Hotel eliminado"),
